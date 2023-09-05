@@ -57,6 +57,7 @@ button {
     color: currentColor;
     cursor: pointer;
     border: none;
+    background-color: transparent;
 }
 /* reset styles end */
 
@@ -473,4 +474,56 @@ main {
     letter-spacing: 0.02em;
 }
 /* portfolio page end */
+
+/* modal window start */
+.backdrop {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    background-color: var(--cl-modal_overlay);
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.modal {
+    position: absolute;
+    width: 408px;
+    min-height: 584px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 4px;
+    background: var(--cl-modal_background);
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20),
+     0px 1px 3px 0px rgba(0, 0, 0, 0.12),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+    padding: 24px;
+}
+
+.modal-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+}
+
+.thumb-close-icon {
+    border-radius: 50%;
+    background-color: var(--cl-accent);
+    margin-left: auto;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* modal window end */
 
