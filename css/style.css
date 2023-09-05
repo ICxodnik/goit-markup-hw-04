@@ -522,28 +522,22 @@ main {
     border: 1px solid rgba(0, 0, 0, 0.1);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
      border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    /* margin-left: auto; */
     position: absolute; 
     top: 24px;
-    left: 24px;
     right: 24px;
-    bottom: 24px;
 }
 
 .modal-btn:focus,
 .modal-btn:hover {
     background-color: #404bbf;
     border: none;
+    color: #ffffff;
 }
 
 
 .modal-btn-img {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-btn-img:hover,
-.modal-btn-img:focus {
-    fill: #ffffff;
+    fill: currentColor
 }
 
 /* modal window end */
