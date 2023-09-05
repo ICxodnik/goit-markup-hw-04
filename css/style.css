@@ -253,6 +253,17 @@ main {
     gap: 24px; */
 }
 
+.aboutstudio-thumb {
+    border-radius: 4px;
+    background-color: var(--cl-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 264px;
+    height: 112px;
+    margin-bottom: 8px;
+}
+
 .aboutstudio-el {
     flex-basis: calc((100% - 3 * 24px) / 4);
 }
