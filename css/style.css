@@ -367,6 +367,11 @@ main {
     fill: currentColor;
 }
 
+.customer-img:hover,
+.customer-img:focus {
+    color: var(--cl-pressed_state);
+}
+
 /* customer end */
 
 /* footer start */
