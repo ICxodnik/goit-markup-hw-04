@@ -543,7 +543,7 @@ main {
 
 .modal-btn-img:hover,
 .modal-btn-img:focus {
-    fill: var(--cl-white_background);
+    fill: #ffffff;
 }
 
 /* modal window end */
