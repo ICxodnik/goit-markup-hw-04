@@ -330,6 +330,33 @@ main {
 }
 /* team end */
 
+/* customer start */
+
+.customers-section {
+
+}
+
+.customer-list {
+       /* display: flex;
+    gap: 24px; */
+}
+
+.customer-thumb {
+    border-radius: 4px;
+    border: 1px solid var(--cl-subtle_text);
+    width: 168px;
+    height: 88px;
+    display: flex;
+    align-items: center;
+    justify-content: center;;
+}
+
+.customer-img {
+    stroke: var(--cl-subtle_text);
+    fill: var(--cl-subtle_text);
+}
+
+/* customer end */
 
 /* footer start */
 .footer {
