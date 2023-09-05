@@ -350,12 +350,13 @@ main {
 .customer-el-link {
     width: 100%;
     height: 100%;
-    border: 1px solid var(--cl-subtle_text);
     border-radius: 4px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--cl-subtle_text);
+    border: 1px solid currentColor;
+
 }
 
 .customer-el-link:hover,
@@ -367,10 +368,6 @@ main {
     fill: currentColor;
 }
 
-.customer-img:hover,
-.customer-img:focus {
-    color: var(--cl-pressed_state);
-}
 
 /* customer end */
 
