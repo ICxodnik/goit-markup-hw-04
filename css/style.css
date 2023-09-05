@@ -58,6 +58,7 @@ button {
     cursor: pointer;
     border: none;
     background-color: transparent;
+    padding: 0; 
 }
 /* reset styles end */
 
@@ -482,8 +483,9 @@ main {
     bottom: 0;
     left: 0;
     right: 0;
-
     background-color: var(--cl-modal_overlay);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
@@ -517,6 +519,9 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     /* margin-left: auto; */
     position: absolute; 
     top: 24px;
@@ -525,5 +530,20 @@ main {
     bottom: 24px;
 }
 
-/* modal window end */
+.modal-btn:focus,
+.modal-btn:hover {
+    background-color: #404bbf;
+    border: none;
+}
 
+
+.modal-btn-img {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-btn-img:hover,
+.modal-btn-img:focus {
+    fill: var(--cl-white_background);
+}
+
+/* modal window end */
