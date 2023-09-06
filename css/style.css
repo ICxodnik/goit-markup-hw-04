@@ -20,7 +20,6 @@
 }
 
 /* reset styles start */
-
 img {
     display: block;
     max-width: 100%;
@@ -171,7 +170,6 @@ main {
     background-color: var(--cl-primary_brand);
     padding: 40px 32px;
 }
-
 /* general styles end */
 
 
@@ -406,15 +404,6 @@ main {
 /* team end */
 
 /* customer start */
-.customers-section {
-
-}
-
-.customer-list {
-    /* display: flex;
-    gap: 24px; */
-}
-
 .customer-list-el {
     width: calc((100% - (24px * 5)) / 6);
     height: 88px;
@@ -456,7 +445,6 @@ main {
 
 .footer-tx {
     color: var(--cl-light);
-
     line-height: 1.5;
     letter-spacing: 0.02em;
     width: 265px;
@@ -582,7 +570,6 @@ main {
 
 .exemple-title {
     color: var(--cl-dark);
-
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
@@ -592,7 +579,6 @@ main {
 
 .exemple-tx {
     color: var(--cl-text);
-
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
@@ -627,7 +613,7 @@ main {
     background: var(--cl-modal_background);
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20),
      0px 1px 3px 0px rgba(0, 0, 0, 0.12),
-    0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+     0px 1px 1px 0px rgba(0, 0, 0, 0.14);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
