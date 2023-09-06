@@ -163,27 +163,6 @@ main {
     justify-content: space-between;
 }
 
-.nav-list {
-    --default-list-display: inline-flex;
-    --default-gap-cl: 40px;
-}
-
-.selected-nav {
-    position: relative;
-    color: var(--cl-pressed_state);
-}
-
-.selected-nav::after {
-    position: absolute; 
-    content: '';
-    left: 0; 
-    bottom: -1px; 
-    height: 4px; 
-    background-color: #404bbf;
-    border-radius: 2px; 
-}
-
-
 .nav-title {
     display: inline-block;
     font-weight: 500;
@@ -197,6 +176,27 @@ main {
 .nav-title:hover,
 .nav-title:focus {
     color: var(--cl-pressed_state);
+}
+
+.nav-list {
+    --default-list-display: inline-flex;
+    --default-gap-cl: 40px;
+}
+
+.nav-title.selected-nav {
+    position: relative;
+    color: var(--cl-pressed_state);
+}
+
+.nav-title.selected-nav::after {
+    position: absolute; 
+    content: '';
+    left: 0; 
+    bottom: -1px; 
+    height: 4px; 
+    background-color: #404bbf;
+    border-radius: 2px; 
+    width: 100%;
 }
 
 .address-list {
