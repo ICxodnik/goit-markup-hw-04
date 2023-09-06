@@ -168,11 +168,12 @@ main {
     --default-gap-cl: 40px;
 }
 
-.selected-nav-element {
+.selected-nav {
     position: relative;
     color: #404bbf;
 }
-.selected-nav-element::after {
+
+.selected-nav::after {
     position: absolute; 
     content: '';
     left: 0; 
