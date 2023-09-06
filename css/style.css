@@ -415,6 +415,20 @@ main {
     letter-spacing: 0.02em;
     width: 265px;
 }
+
+.footer-container {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-info {
+    margin-right: 120px 
+}
+
+.footer-links {
+
+}
+
 /* footer end */
 
 
