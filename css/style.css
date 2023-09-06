@@ -530,9 +530,37 @@ main {
 }
 
 .exemple-el {
+    position: relative;
     background: var(--cl-white_background);
     border: 1px solid var(--cl-accent);
     flex-basis: calc((100% - 2 * 24px) / 3);
+}
+
+.exemple-el:hover .overlay {
+    transform: translateY(0);
+  }
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(100%);
+  
+    display: flex;
+    align-items: center;
+  
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+  
+    background-image: linear-gradient(161deg, rgba(253, 253, 255, 0.1) 70%, rgba(8, 2, 21, 0));
+  
+    will-change: transform;
+    transition: transform 400ms linear;
+}
+
+.overlay-text {
+    top: 0; 
 }
 
 .exemple-details {
