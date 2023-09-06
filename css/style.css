@@ -30,7 +30,7 @@ img {
 }
 
 h2, h3, h4, h5, h6 {
-    color: var(--cl-dark); 
+    color: var(--cl-dark);
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -58,7 +58,7 @@ button {
     cursor: pointer;
     border: none;
     background-color: transparent;
-    padding: 0; 
+    padding: 0;
 }
 /* reset styles end */
 
@@ -104,7 +104,7 @@ main {
 
 .nav {
     display: flex;
-    align-items: center; 
+    align-items: center;
 }
 
 .section {
@@ -126,8 +126,9 @@ main {
 
 .social-media-list {
     display: flex;
-    align-items: center; 
+    align-items: center;
     justify-content: center;
+    gap: 16px; 
 }
 
 .social-link-img {
@@ -140,20 +141,20 @@ main {
     background-color: var(--cl-primary_brand);
     border-radius: 50%;
     display: flex;
-    align-items: center; 
+    align-items: center;
     justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:hover,
 .social-link:focus {
-    background-color: var(--cl-success); 
+    /* background-color: var(--cl-success); */
+    background-color: var(--cl-pressed_state);
 }
 
 .social-link-el {
     width: 40px;
     height: 40px;
-    display: flex; 
-    gap: 16px;
 }
 
 /* general styles end */
@@ -188,7 +189,7 @@ main {
     background: var(--cl-white_background);
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
      0px 1px 1px rgba(46, 47, 66, 0.16),
-     0px 1px 6px rgba(46, 47, 66, 0.08); 
+     0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -200,7 +201,7 @@ main {
     display: inline-block;
     font-weight: 500;
     line-height: 1.5;
-    letter-spacing: 0.02em; 
+    letter-spacing: 0.02em;
     color: var(--cl-dark);
     padding: 24px 0;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -222,13 +223,13 @@ main {
 }
 
 .nav-title.selected-nav::after {
-    position: absolute; 
+    position: absolute;
     content: '';
-    left: 0; 
-    bottom: -1px; 
-    height: 4px; 
-    background-color: #404bbf;
-    border-radius: 2px; 
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    background-color: var(--cl-pressed_state);
+    border-radius: 2px;
     width: 100%;
 }
 
@@ -402,7 +403,7 @@ main {
 
 .customer-list-el {
     width: calc((100% - (24px * 5)) / 6);
-    height: 88px; 
+    height: 88px;
 }
 
 .customer-el-link {
@@ -433,13 +434,13 @@ main {
 
 /* footer start */
 .footer {
-    background: var(--cl-dark); 
+    background: var(--cl-dark);
     padding: 100px 0;
 }
 
 .logo-footer{
     display: inline-block;
-    margin-bottom: 16px; 
+    margin-bottom: 16px;
 }
 
 .footer-tx {
@@ -464,7 +465,7 @@ main {
 }
 
 .footer-info {
-    margin-right: 120px 
+    margin-right: 120px
 }
 
 .footer-links {
@@ -512,7 +513,7 @@ main {
     border: 1px solid transparent;
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
     0px 2px 1px 0px rgba(0, 0, 0, 0.08),
-    0px 3px 1px 0px rgba(0, 0, 0, 0.10); 
+    0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 }
 
 .portfolio-list {
@@ -559,7 +560,7 @@ main {
     left: 0;
     right: 0;
     background-color: var(--cl-modal_overlay);
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -597,14 +598,14 @@ main {
     border: 1px solid rgba(0, 0, 0, 0.1);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
      border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    position: absolute; 
+    position: absolute;
     top: 24px;
     right: 24px;
 }
 
 .modal-btn:focus,
 .modal-btn:hover {
-    background-color: #404bbf;
+    background-color: var(--cl-pressed_state);
     border: none;
     color: var(--cl-white_background);
 }
