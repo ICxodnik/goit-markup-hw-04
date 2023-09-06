@@ -128,6 +128,10 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    /* gap: 24px;  */
+}
+
+.footer-links .social-media-list {
     gap: 16px; 
 }
 
@@ -148,8 +152,11 @@ main {
 
 .social-link:hover,
 .social-link:focus {
-    /* background-color: var(--cl-success); */
     background-color: var(--cl-pressed_state);
+}
+.footer-links .social-link:hover,
+.footer-links .social-link:focus {
+    background-color: var(--cl-success);
 }
 
 .social-link-el {
