@@ -170,7 +170,7 @@ main {
 
 .selected-nav {
     position: relative;
-    color: #404bbf;
+    color: var(--cl-pressed_state);
 }
 
 .selected-nav::after {
