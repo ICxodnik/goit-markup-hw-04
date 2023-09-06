@@ -15,6 +15,15 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <style>
+      /* при завантажуванні сторінки щоб не спрацьовувала анімація схову  модального вікна, 
+      таке трапляється після очистки кєшу */
+      .backdrop.is-hidden {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+      }
+    </style>
     <title>WEBSTUDIO</title>
   </head>
   <body>
