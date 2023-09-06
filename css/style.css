@@ -124,6 +124,16 @@ main {
     margin-bottom: 72px;
 }
 
+.social-media-list {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+.social-link-img {
+    fill:var(--cl-light);
+}
+
 .social-link {
     width: 100%;
     height: 100%;
@@ -443,6 +453,8 @@ main {
     margin-bottom: 16px;
     font-weight: 500;
     color: var(--cl-white_background);
+    line-height: 1.5;
+    letter-spacing: 0.02em
 }
 
 .footer-container {
