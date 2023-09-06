@@ -416,6 +416,12 @@ main {
     width: 265px;
 }
 
+.footer-title {
+    margin-bottom: 16px;
+    font-weight: 500;
+    color: var(--cl-white_background);
+}
+
 .footer-container {
     display: flex;
     align-items: baseline;
@@ -564,7 +570,7 @@ main {
 .modal-btn:hover {
     background-color: #404bbf;
     border: none;
-    color: #ffffff;
+    color: var(--cl-white_background);
 }
 
 
