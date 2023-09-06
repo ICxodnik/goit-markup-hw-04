@@ -536,7 +536,7 @@ main {
     flex-basis: calc((100% - 2 * 24px) / 3);
 }
 
-.exemple-el:hover .overlay {
+.exemple-link:hover .overlay {
     transform: translateY(0);
   }
 
